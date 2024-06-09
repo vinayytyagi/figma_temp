@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Kaiya Vetrovs', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Open', rate: '$70.00', balance: '-$350.00', deposit: '$500.00' },
         { name: 'Ryan Westervelt', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Paid', rate: '$70.00', balance: '-$270.00', deposit: '$500.00' },
         { name: 'Corey Stanton', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Due', rate: '$70.00', balance: '$30.00', deposit: '$500.00' },
+        { name: 'Zain Cattzari', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Open', rate: '$70.00', balance: '-20.00', deposit: '$500.00' },
+        { name: 'Leo Stanton', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Inactive', rate: '$70.00', balance: '$600.00', deposit: '$500.00' },
+        { name: 'Kaiya Vetrovs', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Open', rate: '$70.00', balance: '-$350.00', deposit: '$500.00' },
+        { name: 'Ryan Westervelt', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Paid', rate: '$70.00', balance: '-$270.00', deposit: '$500.00' },
+        { name: 'Corey Stanton', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Due', rate: '$70.00', balance: '$30.00', deposit: '$500.00' },
+        { name: 'Adison Aminoff', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Open', rate: '$70.00', balance: '-$270.00', deposit: '$500.00' },
         { name: 'Adison Aminoff', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Open', rate: '$70.00', balance: '-$270.00', deposit: '$500.00' },
         { name: 'Alfredo Aminoff', description: 'Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Nulla...', status: 'Inactive', rate: '$70.00', balance: '$460.00', deposit: '$500.00' }
     ];

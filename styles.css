@@ -283,7 +283,7 @@ td.status.inactive {
     justify-content: space-between;
     padding: 10px;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.50);
     border-radius: 0px 0px 10px 10px;
     position: sticky;
     bottom: 0;
@@ -293,16 +293,23 @@ td.status.inactive {
 .pagination-info {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .rows-per-page {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .rows-per-page select {
     margin-left: 5px;
     margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
 }
 
 .page-navigation {
@@ -320,17 +327,19 @@ td.status.inactive {
 
 .page-navigation span {
     margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .page-navigation button {
     margin: 0 2px;
-    /* padding: 10px 10px; */
     border: 2px solid #d7dbe2;
     background-color: #ffffff;
     color: #464f60;
     border-radius: 10px;
     cursor: pointer;
-    width: 40px;
+    width: 32px;
+    height: 25px;
 }
 
 
@@ -338,7 +347,10 @@ td.status.inactive {
     background-color: #cecece;
 }
 
-/* Modal styles */
+
+
+
+
 .modal {
     display: none;
     position: fixed;
@@ -355,10 +367,16 @@ td.status.inactive {
     background-color: #fff;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
     max-width: 500px;
-    border-radius: 8px;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 255, 255);;
+    transform: translate(0%, 21%);
+
+}
+
+.modal-content h2{
+    margin-left: 160px;
 }
 
 .close-button {
