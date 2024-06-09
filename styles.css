@@ -467,10 +467,40 @@ td.status.inactive {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 0px 5px;
     display: flex;
     flex-direction: column;
     z-index: 1000;
+}
+
+#view-btn{
+    color: var(--primary);
+    background-color: #fff;
+}
+
+#view-btn svg{
+    padding-left: 25px;
+    padding-top: 4px;
+}
+
+#edit-btn{
+    color: var(--primary);
+    background-color: #fff;
+}
+
+#edit-btn svg{
+    padding-left: 32px;
+    padding-top: 4px;
+}
+
+#delete-btn{
+    color: var(--negative);
+    background-color: #fff;    
+}
+
+#delete-btn svg{
+    padding-left: 15px;
+    padding-top: 4px;
 }
 
 .actions-popup.hidden {
@@ -479,10 +509,14 @@ td.status.inactive {
 
 .actions-popup button {
     margin: 5px 0;
-    padding: 5px 10px;
+    padding: 0px 0px 0px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    width: 120px;
+    height: 28px;
 }
 
-/* Hide the actions dots initially */
 .actions-dots {
     display: none;
 }
