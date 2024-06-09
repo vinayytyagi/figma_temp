@@ -213,8 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
             deposit: customerForm.deposit.value
         };
         rows.push(newRow);
-        modal.style.display = 'none';
         renderTable();
+        modal.style.display = 'none';
     });
 
     selectAllCheckbox.addEventListener('change', () => {
