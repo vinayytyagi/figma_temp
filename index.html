@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="main"> -->
+        <div class="table-controls">
+            <div class="left-table-controls">
+                <svg class="search-funnel" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.79 1.61564C12.3029 0.959102 11.8351 0 11.002 0H1.00186C0.168707 0 -0.299092 0.959101 0.213831 1.61564L5.03983 7.72867C5.1772 7.90449 5.25181 8.1212 5.25181 8.34432V13.7961C5.25181 13.9743 5.46724 14.0635 5.59323 13.9375L6.60536 12.9254C6.69913 12.8316 6.75181 12.7044 6.75181 12.5718V8.34432C6.75181 8.1212 6.82643 7.90449 6.96379 7.72867L11.79 1.61564Z"
+                        fill="#464F60" />
+                </svg>
+                <input type="text" id="search" placeholder="Search..." oninput="handleSearch()">
+            </div>
+            <button id="add-customer-btn"><i class="fa-regular fa-plus"></i> Add Customer</button>
+        </div>
+        <!-- </div> -->
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <th>#</th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>STATUS</th>
+                    <th>RATE</th>
+                    <th>BALANCE</th>
+                    <th>DEPOSIT</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+        <div class="table-footer">
+            <div class="pagination-info">
+                <span id="page-info">1-10 of 97</span>
+            </div>
+            <div class="rows-per-page">
+                <label for="rows-per-page-select">Rows per page:</label>
+                <select id="rows-per-page-select">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="page-navigation">
+                <span id="current-page">1/10</span>
+                <button id="prev-page-btn">&lt;</button>
+                <button id="next-page-btn">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Customer Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Add Customer</h2>
+            <form id="customer-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                <label for="status">Status:</label>
+                <input type="text" id="status" name="status" required>
+                <label for="rate">Rate:</label>
+                <input type="text" id="rate" name="rate" required>
+                <label for="balance">Balance:</label>
+                <input type="text" id="balance" name="balance" required>
+                <label for="deposit">Deposit:</label>
+                <input type="text" id="deposit" name="deposit" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="actions-popup" class="actions-popup hidden">
+        <button id="view-btn">View</button>
+        <button id="edit-btn">Edit</button>
+        <button id="delete-btn">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
