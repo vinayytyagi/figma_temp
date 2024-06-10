@@ -111,9 +111,9 @@ body {
 .search-container svg {
     position: absolute;
     top: 50%;
-    left: 10px; /* Adjust this value to position the icon horizontally */
+    left: 10px; 
     transform: translateY(-50%);
-    pointer-events: none; /* Ensure the icon doesn't block input field interaction */
+    pointer-events: none; 
 }
 
 .search-container input {
@@ -517,6 +517,10 @@ td.status.inactive {
     height: 28px;
 }
 
+/* .actions-popup button:hover{
+    background-color: #be4545;
+} */
+
 .actions-dots {
     display: none;
 }
@@ -525,21 +529,16 @@ td.status.inactive {
     cursor: pointer;
 }
 
-/* Show the actions dots when hovering over a row */
 tr:hover .actions-dots {
     display: inline-block;
     border: 1px solid transparent;
-    /* Add this line */
 
 }
 
 .selected-row {
     background-color: #ebf0fa !important;
-    /* Red background color for selected row */
-
 }
 
 .selected-row .actions-cell {
     background-color: #ebf0fa;
-    /* Red strip background color for actions cell in selected row */
 }

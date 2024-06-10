@@ -79,12 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             tr.style.height = '64px'; // Set row height to 30px
 
-            // Add event listener to toggle checkbox when the row is clicked
             tr.addEventListener('click', (event) => {
                 const checkbox = tr.querySelector('.select-row');
                 if (event.target !== checkbox) {
                     checkbox.checked = !checkbox.checked;
-                    tr.classList.toggle('selected-row'); // Toggle selected row class
+                    tr.classList.toggle('selected-row'); 
                 }
             });
 
